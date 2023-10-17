@@ -1,4 +1,3 @@
-
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
   navToggle = document.getElementById('nav-toggle'),
@@ -31,41 +30,48 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /*=============== ADD BLUR TO HEADER ===============*/
-const blurHeader = () =>{
-    const header = document.getElementById('header');
+const blurHeader = () => {
+  const header = document.getElementById('header');
 
-    this.scrollY >= 50 ? header.classList.add('blur-header') : header.classList.remove('blur-header')
-}
+  this.scrollY >= 50
+    ? header.classList.add('blur-header')
+    : header.classList.remove('blur-header');
+};
 
-window.addEventListener('scroll',blurHeader);
+window.addEventListener('scroll', blurHeader);
 
 /*=============== SHOW SCROLL UP ===============*/
-const scrollUp = () =>{
-    const scrollUp = document.getElementById('scroll-up');
+// const scrollUp = () => {
+//   const scrollUp = document.getElementById('scroll-up');
 
-    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll') : scrollUp.classList.remove('show-scroll')
-}
+//   this.scrollY >= 350
+//     ? scrollUp.classList.add('show-scroll')
+//     : scrollUp.classList.remove('show-scroll');
+// };
 
-window.addEventListener('scroll',scrollUp);
+// window.addEventListener('scroll', scrollUp);
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('section[id]');
 
-const scrollActive = () =>{
-    const scrollY = window.pageYOffset;
+const scrollActive = () => {
+  const scrollY = window.pageYOffset;
 
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 58;
-        const sectionId = current.getAttribute('id');
-        const sectionClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 58;
+    const sectionId = current.getAttribute('id');
+    const sectionClass = document.querySelector(
+      '.nav__menu a[href*=' + sectionId + ']'
+    );
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            sectionClass.classList.add('active-link');
-        }else{
-        sectionClass.classList.remove('active-link');
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionClass.classList.add('active-link');
+      console.log(current);
+    } else {
+      sectionClass.classList.remove('active-link');
     }
-    })
-}
-window.addEventListener('scroll',scrollActive);
+  });
+};
+window.addEventListener('scroll', scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
