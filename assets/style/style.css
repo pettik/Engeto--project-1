@@ -10,7 +10,7 @@
   --white-color: hsl(0, 0%, 100%);
   --title-color: hsl(160, 0%, 10%);
   --text-color: hsl(160, 0%, 16%);
-  --text-color-light: hsl(0, 0%, 60%);
+  --container-color-light: hsl(0, 0%, 95%);
   --body-color: hsl(0, 0%, 100%);
   --container-color: hsl(350, 14%, 34%);
 
@@ -120,7 +120,7 @@ p{
 }
 
 .section {
-  padding-block: 5rem;
+  padding-block: 6rem;
 }
 
 .section__title {
@@ -308,7 +308,7 @@ p{
 }
 
 .about__image:hover .about__img{
-  transform: scale(1.25);
+  transform: scale(1.1);
 }
 
 
@@ -343,16 +343,155 @@ p{
   margin-bottom: 1rem;
 }
 /*=============== OUR TRIPS ===============*/
+.our__trips{
+  padding-block:3rem;
+}
 
+.our__trips__cards{
+  grid-auto-rows: 1fr;
+  row-gap: .5rem;
+}
+
+.our__trips__card{
+overflow: hidden;
+}
+
+.text-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: var(--container-color-light);
+}
+
+.our__trips-title{
+font-size: var(--h1-font-size);
+}
+
+.our__trips__img{
+height: 100%;;
+object-fit: cover;
+object-position: center;
+transition: transform .4s;
+}
+
+.our__trips__card:hover .our__trips__img{
+  transform: scale(1.1);
+}
 /*=============== WHERE TO GO ===============*/
+.where__to__go{
+  background-color: var(--container-color);
+}
 
+.where__to__go__description{
+  padding-right: 1.5rem;
+}
+.where__to__go__description span{
+  display: block;
+  margin-block: 2rem;
+}
+
+.where__to__go__button{
+  display: inline-block;
+  background-color: var(--container-color-light);
+  text-transform: uppercase;
+  color:var(--text-color);
+  font-weight: var(--font-semi-bold);
+  padding:.5rem 2rem;
+  letter-spacing: 1.5px;
+  transition: background-color .4s;;
+}
+
+.where__to__go__button:hover{
+  background-color: var(--white-color);
+}
 /*=============== REVIEWS ===============*/
+.reviews{
+  background:var(--container-color-light);
+}
 
+.reviews__data,
+.reviews__data h2{
+  text-align: right;
+}
+
+.reviews__cards{
+  grid-template-columns: 260px;
+  justify-content: center;
+  text-align: center;
+}
+
+.reviews__card{
+  margin-top: 3rem;
+  justify-items: center;
+  row-gap: 1rem;
+}
+.reviews__img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  }
+/*=============== GALLERY ===============*/
+.gallery__container{
+  row-gap: 0;
+  grid-template-rows: repeat(4,350px);
+}
+
+.gallery__image{
+  overflow: hidden;
+}
+
+.gallery__img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .4s;
+}
+
+.gallery__img:hover{
+  transform: scale(1.1);
+}
 /*=============== FOOTER ===============*/
+.footer{
+  padding-block: 1rem;
+  background-color: var(--container-color);
+  text-align: center;
+}
+
+.footer__data{
+  row-gap: 0;
+}
+
+.footer__link{
+  display:inline-flex;
+  justify-content: center;
+  position:relative;
+  color:var(--container-color-light);
+}
+
+.footer__link::after{
+  content:'';
+  width: 0;
+  height: 2px;;
+  background-color: var(--white-color);
+  position: absolute;
+  left: 0;
+  bottom: -.1rem;
+  transition: width .3s;
+  z-index: 10;
+}
+
+.footer__link:hover::after{
+  width: 70%;
+}
+
+
 
 /*=============== SCROLL BAR ===============*/
 
-/*=============== BUTTON ===============*/
 
 /*=============== SCROLL UP ===============*/
 
