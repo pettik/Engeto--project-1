@@ -437,7 +437,7 @@ transition: transform .4s;
 /*=============== GALLERY ===============*/
 .gallery__container{
   row-gap: 0;
-  grid-template-rows: repeat(4,350px);
+  grid-template-rows: repeat(4,400px);
 }
 
 .gallery__image{
@@ -446,6 +446,7 @@ transition: transform .4s;
 
 .gallery__img{
   height: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: center;
   transition: transform .4s;
@@ -470,6 +471,11 @@ transition: transform .4s;
   justify-content: center;
   position:relative;
   color:var(--container-color-light);
+  transition: color .3s;
+}
+
+.footer__link:hover{
+  color:var(--white-color);
 }
 
 .footer__link::after{
@@ -485,7 +491,7 @@ transition: transform .4s;
 }
 
 .footer__link:hover::after{
-  width: 70%;
+  width: 100%;
 }
 
 
@@ -494,8 +500,32 @@ transition: transform .4s;
 
 
 /*=============== SCROLL UP ===============*/
+.scrollup{
+  position:fixed;
+  right: .7rem;
+  bottom: -50%;
+  background-color: var(--body-color);
+  border:1px solid var(--container-color);
+  border-radius: .5rem;
+  padding: 6px;
+  display:inline-flex;
+  color:var(--container-color);
+  font-size: 1.25rem;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  z-index:var(--z-tooltip);
+  transition: bottom .4s, transform .4s, box-shadow .2s;
+}
+
+.scrollup:hover{
+  transform: translateY(-.25rem);
+  box-shadow: 0 3px 3px var(--container-color);
+}
 
 /* Show Scroll Up */
+.show-scroll{
+  bottom: 3rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -504,6 +534,11 @@ transition: transform .4s;
 
 /* For large devices */
 @media screen and (min-width: 1023px) {
+  .container{
+    margin-left: auto;;
+    margin-right: auto;
+  }
+
   .nav__close,
   .nav__toggle {
     display: none;
