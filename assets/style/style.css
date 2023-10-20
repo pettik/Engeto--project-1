@@ -26,6 +26,8 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
+  --text-shadow: 0 3px 8px hsl(0, 0%, 0%);
+
   /*========== Font weight ==========*/
   --font-regular: 400;
   --font-medium: 500;
@@ -281,7 +283,7 @@ p {
 
 .home__title {
   font-size: var(--biggest-font-size);
-  text-shadow: 0 3px 10px hsl(0, 0%, 0%);
+  text-shadow: var(--text-shadow);
   line-height: 1.05;
   bottom: 0;
   right: 0;
@@ -388,6 +390,11 @@ p {
 /*=============== WHERE TO GO ===============*/
 .where__to__go {
   background-color: var(--container-color);
+  
+}
+
+.where__to__go__container {
+  grid-template-columns: 1fr;
 }
 
 .where__to__go__description {
@@ -443,7 +450,7 @@ p {
 /*=============== GALLERY ===============*/
 .gallery__container {
   row-gap: 0;
-  grid-template-rows: repeat(4, 400px);
+  grid-template-rows: repeat(4, 370px);
 }
 
 .gallery__image {
@@ -501,6 +508,21 @@ p {
 }
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .15rem;
+  
+  background-color: var(--container-color-light)
+}
+::-webkit-scrollbar-thumb{
+  border-radius: .25rem;
+  
+  background-color: hsl(350, 14%, 50%);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(350, 14%, 30%);
+}
+
 
 /*=============== SCROLL UP ===============*/
 .scrollup {
@@ -514,8 +536,6 @@ p {
   display: inline-flex;
   color: var(--container-color);
   font-size: 1.25rem;
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
   z-index: var(--z-tooltip);
   transition: bottom 0.4s, transform 0.4s, box-shadow 0.2s;
 }
@@ -532,17 +552,178 @@ p {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 340px){
+  :root {
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: .85rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 
-/* For medium devices */
+  .grid{
+    grid-template-columns: 100%;
+  }
+  
+  .container{
+    overflow: hidden;
+    margin-inline: .75rem;    
+  }
+  .section {
+    padding-block: 3rem;
+}
+.gallery__container {
+  grid-template-rows: repeat(4, 300px);
+}
+  .footer__data{
+    font-size: .65rem;
+  }
+
+  .scrollup {
+    padding:3px
+  }
+}
+
+/* For landscape phones */
+@media screen and (min-width: 480px) {
+  .our__trips__cards{
+    grid-template-rows:repeat(9,300px);
+      grid-template-columns: 1fr;
+  }
+
+  .our__trips__img {
+    width: 100%;
+  }
+
+  .gallery__container {
+    grid-template-rows: repeat(4, 285px);
+  }
+}
+
+
+/* For medium devices (490px - 768px) */
+@media screen and (min-width: 490px) {
+
+  .about__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__data {
+    padding-inline: 0
+}
+
+.about__img {
+  height: 100%;
+  width: auto;;
+  object-fit: cover;;
+  object-position: center;
+}
+
+.what__we__do__cards{
+  grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+}
+
+.what__we__do__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+}
+
+.what__we__do__img{
+  max-width: 60px;
+}
+
+.our__trips {
+  padding-block: 2rem;
+}
+
+.our__trips__container{
+  margin-inline: 1rem;
+
+}
+.our__trips__cards {
+  gap:.25rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+
+.our__trips-title {
+  font-size: 2rem;
+}
+
+.where__to__go__container {
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2.5rem;
+}
+
+.where__to__go__data {
+  font-size: .9rem
+} 
+.where__to__go__description {
+  padding-right: 0;
+}
+
+.where__to__go__button {
+  padding: 0.4rem 1.5rem;
+  letter-spacing: 1.25px;
+}
+
+.reviews__cards {
+  grid-template-columns: repeat(2,1fr);
+}
+
+.gallery__container{
+  gap:0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2,1fr);
+}
+
+.gallery__img {
+  height: 105%;
+}
+}
+
+/* For laptop devices */
+@media screen and (min-width: 768px) {
+ .what__we__do__cards{
+  grid-template-columns: repeat(4, 1fr);
+ }
+
+ .what__we__do__card{
+  max-width: 100%;
+ }
+
+ .what__we__do__img{
+  max-width: 100px;
+ }
+
+ .our__trips-title {
+  font-size:var(--h1-font-size)
+}
+
+.reviews__data{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.reviews__description{
+  max-width: 60%;
+}
+}
+
+
 
 /* For large devices */
 @media screen and (min-width: 1023px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  .nav__close,
+ 
+ .nav__close,
   .nav__toggle {
     display: none;
   }
@@ -550,5 +731,26 @@ p {
   .nav__list {
     flex-direction: row;
     column-gap: 4rem;
+  }
+
+  .nav__link{
+    text-shadow: var(--text-shadow);
+  }
+
+}
+
+/* For XXL  devices */
+@media screen and (min-width: 1152px){
+ 
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section{
+    padding-block: 7rem 2rem;
+  }
+  
+  .nav{
+    height: calc(var--header-height) + 1.5rem;
   }
 }
