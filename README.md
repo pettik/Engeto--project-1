@@ -1,13 +1,14 @@
 # Engeto Academy -project-1
-Project #1 (HTML, CSS, JS) of Front-end developer academy on Engeto.com
+Project #1 (HTML, CSS, JS) of Front-end developer Academy on Engeto.com
 
 This is a solution to the [Engeto Academy - Project 1](https://engeto.cz/webova-akademie/). 
 ## Table of contents
-
+- [Screenshot](#screenshot)
 - [Live Site URL](#live)
 - [Author](#author)
 
-
+## Screenshot
+<img src="design/design-preview.jpg" alt="Engeto Project 1">
 
 ## Live
 - Live Site URL: ➡️ [www. petrb-engeto-academy-1.netlify.app/](https://petrb-engeto-academy-1.netlify.app) ⬅️
