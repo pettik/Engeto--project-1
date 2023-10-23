@@ -84,7 +84,7 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-sr.reveal(`.home__data, .what__we__do__data, .reviews__data,  `);
+sr.reveal(`.home__data, .what__we__do__data, .reviews__data`);
 sr.reveal(`.what__we__do__card, .our__trips__card, .reviews__card`, {
   delay: 500,
   distance: '60px',
