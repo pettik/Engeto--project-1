@@ -1,5 +1,5 @@
 # Engeto Academy -project-1
-Project #1 (HTML, CSS, JS) of Front-end developer Academy on Engeto.com
+Project #1 (HTML, CSS, JS) of Front-end developer Academy on Engeto.cz
 
 This is a solution to the [Engeto Academy - Project 1](https://engeto.cz/webova-akademie/). 
 ## Table of contents
