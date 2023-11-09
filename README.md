@@ -17,10 +17,10 @@ This project was created as one of the three projects from the Engeto Academy - 
 
 ## Specifications
 
-🟢 “Mobile-first” approach 📲
-🟢 HTML, CSS, JS
-🟢 CSS Media Queries: (0-340px),(340-480px),(480-490px),(490-768px),(768px-1023px), (1023px-1152px)
-🟢 using external JavaScript library for animating elements
+🟢 “Mobile-first” approach 📲 <br>
+🟢 HTML, CSS, JS <br>
+🟢 CSS Media Queries: (0-340px),(340-480px),(480-490px),(490-768px),(768px-1023px), (1023px-1152px) <br>
+🟢 using external JavaScript library for animating elements <br>
 
 ## Screenshot
 
