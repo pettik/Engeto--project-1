@@ -7,6 +7,7 @@ This is a solution to the [Engeto Academy - Project 1](https://engeto.cz/webova-
 ## Table of contents
 
 - ➡️[Description](#description)
+- ➡️[Specifications](#specifications)
 - ➡️[Screenshot](#screenshot)
 - ➡️[Live Site URL](#live)
 - ➡️[Author](#author)
