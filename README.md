@@ -20,6 +20,7 @@ This project was created as one of the three projects from the Engeto Academy - 
 🟢 “Mobile-first” approach 📲 <br>
 🟢 HTML, CSS, JS <br>
 🟢 CSS Media Queries: <i>0-340px,340-480px,480-490px,490-768px,768px-1023px, 1023px-1152px</i> <br>
+🟢 sticky navigation menu (show/hide) - only mobile devices<br>
 🟢 using external JavaScript library for animating elements <br>
 
 ## Screenshot
