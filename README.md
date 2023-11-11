@@ -10,6 +10,7 @@ This is a solution to the [Engeto Academy - Project 1](https://engeto.cz/webova-
 - ➡️[Specifications](#specifications)
 - ➡️[Screenshot](#screenshot)
 - ➡️[Live Site URL](#live)
+- ➡️[Media Queries](#media-queries)
 - ➡️[Author](#author)
 
 ## Description
@@ -24,9 +25,9 @@ This project was created as one of the three projects from the Engeto Academy - 
 🟢 Flexbox<br>
 🟢 CSS Grid<br>
 🟢 Google Fonts<br>
-🟢 [Gogole Fonts](https://fonts.google.com/) - 'Poppins','Montserrat'<br>
+🟢 [Gogole Fonts](https://fonts.google.com/) - '<i>Poppins</i>', '<i>Montserrat</i>'<br>
 🟢 [Remixicon](https://remixicon.com/) - Open-source system of icons<br>
-🟢 [ScrollReveal](https://scrollrevealjs.org/) - JS library<br>
+🟢 [ScrollReveal](https://scrollrevealjs.org/) - JS library for animations<br>
 🟢 sticky navigation menu (show/hide) - only mobile devices<br>
 
 ## Screenshot
@@ -37,7 +38,7 @@ This project was created as one of the three projects from the Engeto Academy - 
 
 - Live Site URL: ➡️ [www. petrb-engeto-academy-1.netlify.app/](https://petrb-engeto-academy-1.netlify.app) ⬅️
 
-### Media queries
+### Media-queries
 
 - small mobile: 0-340p
 - mobile (default): 340-480px
