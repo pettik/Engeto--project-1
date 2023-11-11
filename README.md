@@ -32,6 +32,14 @@ This project was created as one of the three projects from the Engeto Academy - 
 
 - Live Site URL: ➡️ [www. petrb-engeto-academy-1.netlify.app/](https://petrb-engeto-academy-1.netlify.app) ⬅️
 
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [ScrollReveal](https://scrollrevealjs.org/) - JS library
+
 ## Author
 
 - Website - [Petr Bednarski](https://github.com/pettik)
