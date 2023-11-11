@@ -19,10 +19,15 @@ This project was created as one of the three projects from the Engeto Academy - 
 ## Specifications
 
 🟢 “Mobile-first” approach 📲 <br>
-🟢 HTML, CSS, JS <br>
-🟢 CSS Media Queries: <i>0-340px,340-480px,480-490px,490-768px,768px-1023px, 1023px-1152px</i> <br>
+🟢 Semantic HTML5 markup<br>
+🟢 CSS custom properties<br>
+🟢 Flexbox<br>
+🟢 CSS Grid<br>
+🟢 Google Fonts<br>
+🟢 [Gogole Fonts](https://fonts.google.com/) - 'Poppins','Montserrat'<br>
+🟢 [Remixicon](https://remixicon.com/) - Open-source system of icons<br>
+🟢 [ScrollReveal](https://scrollrevealjs.org/) - JS library<br>
 🟢 sticky navigation menu (show/hide) - only mobile devices<br>
-🟢 using external JavaScript library for animating elements <br>
 
 ## Screenshot
 
@@ -32,13 +37,13 @@ This project was created as one of the three projects from the Engeto Academy - 
 
 - Live Site URL: ➡️ [www. petrb-engeto-academy-1.netlify.app/](https://petrb-engeto-academy-1.netlify.app) ⬅️
 
-### Built with
+### Media queries
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- [ScrollReveal](https://scrollrevealjs.org/) - JS library
+- small mobile: 0-340p
+- mobile (default): 340-480px
+- tablet: 480-490px,490-768px
+- laptop: 768px-1023px
+- big screen: 1023px-1152px
 
 ## Author
 
