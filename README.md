@@ -40,7 +40,7 @@ This project was created as one of the three projects from the Engeto Academy - 
 
 ### Media-queries
 
-- small mobile: 0-340p
+- small mobile: 0-340px
 - mobile (default): 340-480px
 - tablet: 480-490px,490-768px
 - laptop: 768px-1023px
