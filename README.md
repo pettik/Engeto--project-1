@@ -24,8 +24,7 @@ This project was created as one of the three projects from the Engeto Academy - 
 🟢 CSS custom properties<br>
 🟢 Flexbox<br>
 🟢 CSS Grid<br>
-🟢 Google Fonts<br>
-🟢 [Gogole Fonts](https://fonts.google.com/) - '<i>Poppins</i>', '<i>Montserrat</i>'<br>
+🟢 [Google Fonts](https://fonts.google.com/) - '<i>Poppins</i>', '<i>Montserrat</i>'<br>
 🟢 [Remixicon](https://remixicon.com/) - Open-source system of icons<br>
 🟢 [ScrollReveal](https://scrollrevealjs.org/) - JS library for animations<br>
 🟢 sticky navigation menu (show/hide) - only mobile devices<br>
