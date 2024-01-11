@@ -262,8 +262,8 @@ p {
 /*=============== HOME ===============*/
 .home {
   position: relative;
-  height: 600px;
-  padding-block: 3rem;
+  height: 100vh;
+  padding-block: 5rem;
 }
 
 .home__bg {
@@ -390,7 +390,6 @@ p {
 /*=============== WHERE TO GO ===============*/
 .where__to__go {
   background-color: var(--container-color);
-  
 }
 
 .where__to__go__container {
@@ -508,21 +507,20 @@ p {
 }
 
 /*=============== SCROLL BAR ===============*/
-::-webkit-scrollbar{
-  width: .6rem;
-  border-radius: .15rem;
-  
-  background-color: var(--container-color-light)
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.15rem;
+
+  background-color: var(--container-color-light);
 }
-::-webkit-scrollbar-thumb{
-  border-radius: .25rem;
-  
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+
   background-color: hsl(350, 14%, 50%);
 }
-::-webkit-scrollbar-thumb:hover{
-    background-color: hsl(350, 14%, 30%);
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(350, 14%, 30%);
 }
-
 
 /*=============== SCROLL UP ===============*/
 .scrollup {
@@ -552,45 +550,45 @@ p {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px){
+@media screen and (max-width: 340px) {
   :root {
     --biggest-font-size: 3rem;
     --h1-font-size: 2.5rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
-    --normal-font-size: .85rem;
+    --normal-font-size: 0.85rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
 
-  .grid{
+  .grid {
     grid-template-columns: 100%;
   }
-  
-  .container{
+
+  .container {
     overflow: hidden;
-    margin-inline: .75rem;    
+    margin-inline: 0.75rem;
   }
   .section {
     padding-block: 3rem;
-}
-.gallery__container {
-  grid-template-rows: repeat(4, 300px);
-}
-  .footer__data{
-    font-size: .65rem;
+  }
+  .gallery__container {
+    grid-template-rows: repeat(4, 300px);
+  }
+  .footer__data {
+    font-size: 0.65rem;
   }
 
   .scrollup {
-    padding:3px
+    padding: 3px;
   }
 }
 
 /* For landscape phones */
 @media screen and (min-width: 480px) {
-  .our__trips__cards{
-    grid-template-rows:repeat(9,300px);
-      grid-template-columns: 1fr;
+  .our__trips__cards {
+    grid-template-rows: repeat(9, 300px);
+    grid-template-columns: 1fr;
   }
 
   .our__trips__img {
@@ -602,128 +600,120 @@ p {
   }
 }
 
-
 /* For medium devices (490px - 768px) */
 @media screen and (min-width: 490px) {
-
-  .about__container{
+  .about__container {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .about__data {
-    padding-inline: 0
-}
+    padding-inline: 0;
+  }
 
-.about__img {
-  height: 100%;
-  width: auto;;
-  object-fit: cover;;
-  object-position: center;
-}
+  .about__img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+  }
 
-.what__we__do__cards{
-  grid-template-columns: repeat(2, 1fr);
+  .what__we__do__cards {
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+  }
 
-}
+  .what__we__do__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+  }
 
-.what__we__do__card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 50%;
-}
+  .what__we__do__img {
+    max-width: 60px;
+  }
 
-.what__we__do__img{
-  max-width: 60px;
-}
+  .our__trips {
+    padding-block: 2rem;
+  }
 
-.our__trips {
-  padding-block: 2rem;
-}
+  .our__trips__container {
+    margin-inline: 1rem;
+  }
+  .our__trips__cards {
+    gap: 0.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 
-.our__trips__container{
-  margin-inline: 1rem;
+  .our__trips-title {
+    font-size: 2rem;
+  }
 
-}
-.our__trips__cards {
-  gap:.25rem;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,1fr);
-}
+  .where__to__go__container {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2.5rem;
+  }
 
-.our__trips-title {
-  font-size: 2rem;
-}
+  .where__to__go__data {
+    font-size: 0.9rem;
+  }
+  .where__to__go__description {
+    padding-right: 0;
+  }
 
-.where__to__go__container {
-  grid-template-columns: 1fr 2fr;
-  column-gap: 2.5rem;
-}
+  .where__to__go__button {
+    padding: 0.4rem 1.5rem;
+    letter-spacing: 1.25px;
+  }
 
-.where__to__go__data {
-  font-size: .9rem
-} 
-.where__to__go__description {
-  padding-right: 0;
-}
+  .reviews__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.where__to__go__button {
-  padding: 0.4rem 1.5rem;
-  letter-spacing: 1.25px;
-}
+  .gallery__container {
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
 
-.reviews__cards {
-  grid-template-columns: repeat(2,1fr);
-}
-
-.gallery__container{
-  gap:0;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2,1fr);
-}
-
-.gallery__img {
-  height: 105%;
-}
+  .gallery__img {
+    height: 105%;
+  }
 }
 
 /* For laptop devices */
 @media screen and (min-width: 768px) {
- .what__we__do__cards{
-  grid-template-columns: repeat(4, 1fr);
- }
+  .what__we__do__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
- .what__we__do__card{
-  max-width: 100%;
- }
+  .what__we__do__card {
+    max-width: 100%;
+  }
 
- .what__we__do__img{
-  max-width: 100px;
- }
+  .what__we__do__img {
+    max-width: 100px;
+  }
 
- .our__trips-title {
-  font-size:var(--h1-font-size)
+  .our__trips-title {
+    font-size: var(--h1-font-size);
+  }
+
+  .reviews__data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .reviews__description {
+    max-width: 60%;
+  }
 }
-
-.reviews__data{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.reviews__description{
-  max-width: 60%;
-}
-}
-
-
 
 /* For large devices */
 @media screen and (min-width: 1023px) {
-
- 
- .nav__close,
+  .nav__close,
   .nav__toggle {
     display: none;
   }
@@ -733,24 +723,22 @@ p {
     column-gap: 4rem;
   }
 
-  .nav__link{
+  .nav__link {
     text-shadow: var(--text-shadow);
   }
-
 }
 
 /* For XXL  devices */
-@media screen and (min-width: 1152px){
- 
+@media screen and (min-width: 1152px) {
   .container {
     margin-left: auto;
     margin-right: auto;
   }
-  .section{
+  .section {
     padding-block: 7rem 2rem;
   }
-  
-  .nav{
+
+  .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
 }
